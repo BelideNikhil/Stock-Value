@@ -6,9 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Value</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <script src="./app.js" defer></script>
 </head>
 <body>
+    <div class="container">
+        <div id="data">
+            <div id="left">
+                <nav>
+                    <ul>
+                        <div id="inner_li">
+                            <li><a href="https://twitter.com/Nikhil_Belide" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+                            <li><a href="https://github.com/BelideNikhil" target="_blank"  ><i class="fab fa-github fa-2x"></i></a></li>
+                        </div>
+                        <li><span id="logo">Nikhil Belide</span></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h2>Check If your stocks are returning a profit or not!</h2>
+                    <form id="form">
+                        <div id="input_data">
+                            <label for="" class="labels">
+                                <input type="number"  id="purchase_price" placeholder="Stock Price when bought." required>Purchase Price.
+                            </label>
+                            <label for="" class="labels">
+                                <input type="number"  id="quantity" placeholder="Number of Stocks." required>Stock Quantity.
+                            </label>
+                            <label>
+                                <input type="number" class="labels"  id="current_price" placeholder="Live Price of Stock." required>Current Price.
+                            </label>
+                            <input type="submit"  id="btn" value="CHECK">
+                        </div>
+                    </form>
+                </div>
+                <div id="loader">
+                    <img src="./Images/loader.jpg" alt="">
+                </div>
+                <div id="output"></div>
+            </div>
     
+            <div id="right">
+                <div id="over_lapper">
+                    <img src="./Images/overlay.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
