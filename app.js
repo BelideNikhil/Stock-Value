@@ -15,10 +15,10 @@ form_div.addEventListener("submit",(e)=>{
     purchase_price=Number(purchase_price.value)
     current_price=Number(current_price.value)
     num_of_shares=Number(num_of_shares.value)
-
-    dataHandler(purchase_price,num_of_shares,current_price)
-    
+    dataHandler(purchase_price,num_of_shares,current_price) 
 })
+
+
 function dataHandler(purchase,n,present){
     if(purchase<1 || n<1 || present <1){
         loader.style.visibility="visible"
@@ -47,7 +47,7 @@ function dataHandler(purchase,n,present){
         loader.style.visibility="visible"
         output.style.visibility="hidden"
         setTimeout(() => {
-            output.innerHTML=`You lost ${loss_percent}% and the amount gained is <i class="fas fa-rupee-sign fa-sm"></i>${(purchase-present)*n}`
+            output.innerHTML=`You lost ${loss_percent}% and the amount lost is <i class="fas fa-rupee-sign fa-sm"></i>${(purchase-present)*n}`
             output.classList.remove("profit_theme")
             output.classList.add("lost_theme")
             loader.style.visibility="hidden"
