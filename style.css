@@ -60,6 +60,7 @@ h2{
     min-height: 90vh;
     display: grid;
     grid-template-columns: 1.7fr 1fr;
+    gap: 10px;
 }
 /* left side */
 #left{
@@ -131,7 +132,7 @@ h2{
 }
 #loader{
     text-align: left;
-    max-width: 40px;
+    max-width: 50px;
 }
 #loader img{
     width: 100%;

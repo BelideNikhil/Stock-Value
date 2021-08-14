@@ -17,7 +17,7 @@
                     <ul>
                         <div id="inner_li">
                             <li><a href="https://twitter.com/Nikhil_Belide" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
-                            <li><a href="https://github.com/BelideNikhil" target="_blank"  ><i class="fab fa-github fa-2x"></i></a></li>
+                            <li><a href="https://github.com/BelideNikhil/stock-value" target="_blank"  ><i class="fab fa-github fa-2x"></i></a></li>
                         </div>
                         <li><span id="logo">Nikhil Belide</span></li>
                     </ul>
@@ -27,13 +27,13 @@
                     <form id="form">
                         <div id="input_data">
                             <label for="" class="labels">
-                                <input type="number"  id="purchase_price" placeholder="Stock Price when bought." required>Purchase Price.
+                                <input type="number"  id="purchase_price" placeholder="Stock Price when bought." min="0.1" step="0.1" required>Purchase Price.
                             </label>
                             <label for="" class="labels">
-                                <input type="number"  id="quantity" placeholder="Number of Stocks." required>Stock Quantity.
+                                <input type="number"  id="quantity" placeholder="Number of Stocks." min="1" required>Stock Quantity.
                             </label>
                             <label>
-                                <input type="number" class="labels"  id="current_price" placeholder="Live Price of Stock." required>Current Price.
+                                <input type="number" class="labels"  id="current_price" placeholder="Live Price of Stock." min="0.1" step="0.1" required>Current Price.
                             </label>
                             <input type="submit"  id="btn" value="CHECK">
                         </div>
